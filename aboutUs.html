@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arn-អាន</title>
+    <link
+      rel="shortcut icon"
+      href="img/arnLogo.png"
+      type="image/x-icon"
+    />
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Suwannaphum:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+    integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+    crossorigin="anonymous"
+  ></script>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Bootstrap End -->
+    <!-- Add All Custom Component -->
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer2.js" type="text/javascript" defer></script>
+    <script src="components/about-us.js" type="text/javascript" defer></script>
+    
+  </head>
+  <body>
+    <header-component></header-component>
+    <aboutus-label></aboutus-label>
+    <div class="about-text">
+        <p>
+          Arn-អាន គឺជាវេបអនឡាញដែលផ្តល់ជូននូវប្រភពសៀវភៅ ជាលក្ខណៈ 
+Soft (PDF) ក្នុងតម្លៃសមរម្យ! <br>
+គោលបំណងរបស់យើងគឺ ចង់សម្រួល
+ដល់ការលំបាកក្នុងការដើរស្វែងរកសៀវភៅក្នុងបណ្ណាល័យ 
+ដោយងាកមកការបញ្ជាទិញតាមរយៈ Online វិញ ។
+        </p>
+    </div>
+    <div class="how-to-order">
+      <label style="font-weight: bold;" class="how-to">របៀបក្នុងការទិញសៀវភៅ</label>
+      <ul>
+        <li>ស្វែងរកសៀវភៅដែលចង់ទិញ</li>
+        <li>ចុច ប៊ូតុង "បញ្ជាទិញ" </li>
+        <li>បញ្ជូលព័ត៌មាន ដូចជា ៖ ឈ្មោះ, លេខទូរស័ព្ទ, អ៊ីម៉េល</li>
+        <li>ចំណុចបន្ទាប់ធ្វើការ Payment
+          បន្ទាប់ពីបញ្ចូលព័ត៌មានទាំងអស់នេះក្នុងរយៈ 1-2 នាទី លោកអ្នកនឹងទទួលបាន
+          Soft សៀវភៅជា PDF តាមរយៈ Email .</li>
+      </ul>
+    </div>
+    <footer2-component></footer2-component>
+    <div id="loader" class="center"></div>
+    <!--  Page Loader-->
+    <script>
+      document.onreadystatechange = function() {
+        if (document.readyState !== "complete") {
+          document.querySelector(
+          "body").style.visibility = "hidden";
+          document.querySelector(
+          "#loader").style.visibility = "visible";
+        } else {
+          document.querySelector(
+          "#loader").style.display = "none";
+          document.querySelector(
+          "body").style.visibility = "visible";
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,209 @@
+:root{
+    --primary-color:#032D5F;
+    --secondary-color:#EDC34C;
+    --third-color:#f5f5f5;
+    --font-khmer:'Suwannaphum', serif;
+    --font-eng:'Roboto';
+  }
+
+  /** Style Navbar */
+  .nav-custom{
+    background-color: var(--primary-color);
+    color: var(--third-color);
+    font-family: var(--font-khmer);
+  }
+  
+/** Card Style*/
+     .card {
+        margin: 10px;
+        width:300px;
+        height: auto;
+        border: 1px solid #032d5f;
+        transition: all .2s ease-in-out;
+      }
+
+      .img-card{
+        transition: all .2s ease-in-out;
+      }
+      .img-card:hover{
+        transform: scale(0.9);
+      }
+
+      #comming-card, #best-sell, #khmer-history-card, #world-history-card, #psy, #psy-life, #network-card, #programming-card {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card-text, .card-title, .btn, h3 {
+        font-family: var(--font-khmer);
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .btn-warning{
+        color: var(--secondary-color);
+      }
+
+      /**Style Form Register */
+      .form{
+        font-family: var(--font-khmer);
+        max-width: 800px;
+        padding-top: 25px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      ::-webkit-input-placeholder {
+        text-align: center;
+      }
+
+      .col-md-6{
+        margin-top: 25px;
+      }
+      .btn-sigup, .btn-sent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      /**Style Form Register End */
+
+      /**Style About Page */
+      .about-text, .how-to-order{
+        margin-left: 100px;
+        width: 500px;
+        text-justify:inter-word;
+        font-family: var(--font-khmer);
+      }
+      /**Style About Page Page */
+      .how-to{
+        font-size: 24px;
+      }
+
+      /**Loader Style */
+      #loader {
+        border: 12px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 12px solid #032D5F;
+        width: 70px;
+        height: 70px;
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      
+      .center {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+
+      /**Style Button Back to Top */
+      #btn-top{
+        width:50px;
+        height:50px;
+        position: fixed;
+        font-weight: bolder;
+        bottom: 20px;
+        right: 30px;
+        font-size: 20px;
+        border: none;
+        outline: none;
+        background-color: var(--secondary-color);
+        color: white;
+        cursor: pointer;
+        border-radius: 50%;
+        padding: 15px;
+        font-weight:bold;
+        z-index: 99;
+    }
+
+    /**Team Slider */
+    .slider{
+      margin-top: 25px;
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+    }
+    .slider .card{
+      flex: 1;
+      margin: 0 10px;
+      background: #fff;
+      border-radius: 14px;
+    }
+    .slider .card .img{
+      border-radius: 14px;
+      width: 100%;
+    }
+    .slider .card .img img{
+      border-top-left-radius: 14px;
+      border-top-right-radius: 14px;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    .slider .card .content{
+      padding: 10px 20px;
+    }
+    .card .content .title{
+      font-size: 25px;
+      font-weight: 600;
+    }
+    .card .content .sub-title{
+      font-size: 20px;
+      font-weight: 600;
+      color: #e74c3c;
+      line-height: 20px;
+    }
+    .card .content p{
+      text-align: justify;
+      margin: 10px 0;
+    }
+    .card .content .btn{
+      display: block;
+      text-align: left;
+      margin: 10px 0;
+    }
+    .card .content .btn button{
+      background: #e74c3c;
+      color: #fff;
+      border: none;
+      outline: none;
+      font-size: 17px;
+      padding: 5px 8px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .card .content .btn button:hover{
+      transform: scale(0.9);
+    }
+
+    .socail-media{
+      text-align: center;
+    }
+
+    .socail-media a{
+      text-decoration: none;
+      color: #032D5F;
+    }
+
+    .content {
+      text-align: center;
+    }
+
+
+
+  
